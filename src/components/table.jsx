@@ -38,23 +38,23 @@ const Table = () => {
         setLimit(Number(number))
         if (number > limit) {
             if (currentPage === 5 && number === 25) {
-                setCurrentPage(currentPage - 1)                
+                setCurrentPage(totalItems / number)              
             } else if (currentPage === 10 && number === 25) {
-                setCurrentPage(currentPage - 6)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 20 && number === 25) {
-                setCurrentPage(4)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 5 && number === 20) {
-                setCurrentPage(5)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 10 && number === 20) {
-                setCurrentPage(5)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 20 && number === 20) {
-                setCurrentPage(5)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 5 && number === 10) {
-                setCurrentPage(5)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 10 && number === 10) {
-                setCurrentPage(currentPage - 5)
+                setCurrentPage(totalItems / number) 
             } else if (currentPage === 20 && number === 10) {
-                setCurrentPage(10)
+                setCurrentPage(totalItems / number) 
             }
         }
     }
