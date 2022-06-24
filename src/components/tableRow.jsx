@@ -59,8 +59,7 @@ const TableRow = ({id, type, status, userSurname, userName, patronymic, account,
     useEffect(() => {
         const updateWindowDimensions = () => {
             const newWidth = window.innerWidth;
-            setWidth(newWidth);
-            console.log("updating width", width); 
+            setWidth(newWidth); 
             resText()       
         };
         window.addEventListener("resize", updateWindowDimensions);
