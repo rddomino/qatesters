@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1157px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main__table {
+  width: 100%;
+}
+table {
+  margin-top: 30px;
+  width: 100%;;
+  border-collapse: collapse;
+}
+.title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8A8A8A;
+}
+.th__status {
+  text-align: center;
+}
+th {
+  padding-bottom: 5px;
+}
+tr {   
+  border-bottom: 1px solid #D6D6D6;
+}
+td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.last {
+  margin-top: 5px;
+  display: block;
+  color: #8A8A8A;
+  font-size: 14px;
+}
+.th__status {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+.status {
+  display: block;
+  width: 140px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+}
+.status__new {
+  background-color: #B94A48;
+}
+.status__panding {
+  background-color: #3276B1;
+}
+.status__assigned {
+  background-color: #C79121;
+}
+.status__cancel {
+  background-color: #252525;
+}
+.status__done {
+  background-color: green;
+}
+.tr__link {  
+  display: block;  
+  text-decoration: none; 
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  table td {
+      padding: 8px;
+      display: block;
+      text-align: right;
+      padding-right: 10px;
+  }
+
+  table td::before {
+      content: attr(data-label);
+      padding-left: 10px;
+      font-weight: bold;
+      float: left;
+  }
+  
+  #th__status_id {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #d9e2e9;
+  }
+}
+@media screen and (max-width: 452px) {
+  .pag__text {
+    font-size: 11px;
+  }
+  li a {
+    width: 20px;
+    height: 20px;
+  }
+  .page {
+    height: 20px;
+    width: 40px;
+  }
+  .select {
+    height: 20px;
+    width: 40px;
+  }
+}
